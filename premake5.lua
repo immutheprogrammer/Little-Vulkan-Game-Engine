@@ -11,13 +11,13 @@ project "Learn Vulkan"
 
     files
 	{
-		"%{prj.name}/src/**.h",
+		"%{prj.name}/src/**.hpp",
 		"%{prj.name}/src/**.cpp"
 	}
 
     libdirs {"libs", "C:/VulkanSDK/1.2.176.1/Lib"}
     links {"glfw3", "vulkan-1"}
-    includedirs {"vendor/GLFW/include", "C:/VulkanSDK/1.2.176.1/Include"}
+    includedirs {"vendor/GLFW/include", "vendor/GLM/glm", "C:/VulkanSDK/1.2.176.1/Include"}
 
     filter "configurations:Debug"
         symbols "On"
