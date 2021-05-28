@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+# vs folders and generated files
+.vs
+bin
+bin-int
+
+# vs files
+*.vcxproj
+*.vcxproj.user
+*.sln
